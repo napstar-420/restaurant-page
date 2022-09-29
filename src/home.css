@@ -1,0 +1,145 @@
+:root {
+    --pacifico-font: 'pacifico', sans-serif;
+    --cookie-font: 'cookie', sans-serif;
+    --interTight-regular: 'inter-tight', sans-serif;
+    --interTight-semibold: 'inter-tight-semibold', sans-serif;
+    --main-blue: #1fb3dc;
+    --main-red: #ce2339;
+    --black: #303030;
+}
+
+.home {
+    background-color: var(--main-blue);
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home header {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    font-family: var(--pacifico-font);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home header .title-wrapper {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.home header h2 {
+    font-size: 2.5rem;
+    color: var(--main-blue);
+}
+
+.home header h3 {
+    font-size: 2rem;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    color: var(--main-red);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    right: 5rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+nav a:hover {
+    color: var(--main-red);
+}
+
+.home header img {
+    width: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.home .hero h1 {
+    font-size: 3.5rem;
+    font-family: var(--cookie-font);
+    color: var(--main-red);
+    text-align: center;
+}
+
+.home .hero div {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.home .hero div button {
+    font-size: 1.2rem;
+    font-family: var(--interTight-semibold);
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.5rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.home .hero div .menu-btn {
+    background-color: #fff;
+    color: var(--main-blue);
+}
+
+.home .hero div .menu-btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.home .hero div .contact-btn:hover {
+    background-color: #fff;
+    color: var(--main-blue);
+}
+
+.home .cover-wrapper {
+    width: 30rem;
+}
+
+.home .cover-wrapper .cover {
+    width: 100%;
+}
+
+@media screen and (max-width: 756px){
+    .home header img {
+        display: none;
+    }
+    nav {
+        position: static;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 486px) {
+    html {
+        font-size: 80%;
+    }
+    header {
+        flex-direction: column;
+    }
+    .home .cover-wrapper {
+        width: 100%;
+    }
+}

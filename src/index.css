@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-size: 1rem;
+}
+
+@font-face {
+    font-family: 'pacifico';
+    src: url(./fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'inter-tight';
+    src: url(./fonts/InterTight-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'inter-tight-semibold';
+    src: url(./fonts/InterTight-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'cookie';
+    src: url(./fonts/Cookie-Regular.ttf);
+}
+
+#content {
+    min-width: 100%;
+    min-height: 100vh;
+}
