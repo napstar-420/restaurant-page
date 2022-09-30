@@ -1,6 +1,6 @@
 import {home} from './home'
-import './index.css'
-import './home.css'
+import './css/index.css'
+import './css/home.css'
 const app = document.createElement('div');
 app.setAttribute('id', 'content');
 
