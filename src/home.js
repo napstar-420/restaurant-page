@@ -1,4 +1,5 @@
 import coverUrl from './images/cover.png'
+import {routeToMenu, routeToContact} from './index'
 
 export function home() {
     const home = document.createElement('div');
@@ -22,6 +23,8 @@ function hero(){
     let contactBTn = document.createElement('button');
     menuBTn.classList.add('menu-btn')
     contactBTn.classList.add('contact-btn')
+    menuBTn.addEventListener('click', routeToMenu)
+    contactBTn.addEventListener('click', routeToContact)
     menuBTn.textContent = 'Menu';
     contactBTn.textContent = 'Find us';
     div.appendChild(menuBTn)
