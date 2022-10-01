@@ -9,7 +9,7 @@ export default function menuPage() {
 }
 
 function header() {
-    const header = document.createElement('header');
+    const header = document.createElement('div');
     header.classList.add('menu-header');
     // Title
     const title = document.createElement('h2');

@@ -28,4 +28,67 @@
 #content {
     min-width: 100%;
     min-height: 100vh;
+    background-image: url('https://www.pakistanihealthyrecipes.com/wp-content/uploads/2022/03/sweet-creme-lahore.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    min-height: 4rem;
+    background-color: var(--black);
+    text-align: center;
+    font-family: var(--pacifico-font);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .title-wrapper {
+    display: flex;
+    margin-left: 1rem;
+}
+
+header h2 {
+    font-size: 2.5rem;
+    color: var(--main-blue);
+}
+
+header h3 {
+    font-size: 2rem;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    color: var(--main-red);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    right: 5rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+nav a:hover {
+    color: var(--main-red);
+}
+
+header img {
+    width: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 756px){
+    header img {
+        display: none;
+    }
 }
