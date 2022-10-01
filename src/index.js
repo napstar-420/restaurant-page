@@ -15,9 +15,13 @@ app.appendChild(home());
 const homeLink = document.getElementById('homeLink');
 const menuLink = document.getElementById('menuLink');
 const contactLink = document.getElementById('contactLink');
-homeLink.addEventListener('click', routeToHome)
-menuLink.addEventListener('click', routeToMenu)
-contactLink.addEventListener('click', routeToContact)
+const menuBtn = document.querySelector('.menu-btn');
+const contactBtn = document.querySelector('.contact-btn');
+homeLink.addEventListener('click', routeToHome);
+menuLink.addEventListener('click', routeToMenu);
+contactLink.addEventListener('click', routeToContact);
+menuBtn.addEventListener('click', routeToMenu);
+contactBtn.addEventListener('click', routeToContact);
 
 // PLease ignore the logic of my routeTo functions i will improve them later
 
@@ -29,16 +33,19 @@ function routeToHome() {
     const homeLink = document.getElementById('homeLink');
     const menuLink = document.getElementById('menuLink');
     const contactLink = document.getElementById('contactLink');
-    homeLink.addEventListener('click', routeToHome)
-    menuLink.addEventListener('click', routeToMenu)
-    contactLink.addEventListener('click', routeToContact)
+    const menuBtn = document.querySelector('.menu-btn');
+    const contactBtn = document.querySelector('.contact-btn');
+    homeLink.addEventListener('click', routeToHome);
+    menuLink.addEventListener('click', routeToMenu);
+    contactLink.addEventListener('click', routeToContact);
+    menuBtn.addEventListener('click', routeToMenu);
+    contactBtn.addEventListener('click', routeToContact);
 }
 
-export function routeToMenu() {
+function routeToMenu() {
     app.innerHTML = "";
     app.appendChild(header())
     app.appendChild(menu())
-
     const homeLink = document.getElementById('homeLink');
     const menuLink = document.getElementById('menuLink');
     const contactLink = document.getElementById('contactLink');
@@ -47,11 +54,10 @@ export function routeToMenu() {
     contactLink.addEventListener('click', routeToContact)
 }
 
-export function routeToContact() {
+function routeToContact() {
     app.innerHTML = "";
     app.appendChild(header())
     app.appendChild(contact())
-    
     const homeLink = document.getElementById('homeLink');
     const menuLink = document.getElementById('menuLink');
     const contactLink = document.getElementById('contactLink');
