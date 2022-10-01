@@ -7,22 +7,22 @@
 
 @font-face {
     font-family: 'pacifico';
-    src: url(./fonts/Pacifico-Regular.ttf);
+    src: url(../fonts/Pacifico-Regular.ttf);
 }
 
 @font-face {
     font-family: 'inter-tight';
-    src: url(./fonts/InterTight-Regular.ttf);
+    src: url(../fonts/InterTight-Regular.ttf);
 }
 
 @font-face {
     font-family: 'inter-tight-semibold';
-    src: url(./fonts/InterTight-SemiBold.ttf);
+    src: url(../fonts/InterTight-SemiBold.ttf);
 }
 
 @font-face {
     font-family: 'cookie';
-    src: url(./fonts/Cookie-Regular.ttf);
+    src: url(../fonts/Cookie-Regular.ttf);
 }
 
 #content {
