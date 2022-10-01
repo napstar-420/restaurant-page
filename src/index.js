@@ -24,6 +24,8 @@ menuBtn.addEventListener('click', routeToMenu)
 contactLink.addEventListener('click', routeToContact)
 contactBtn.addEventListener('click', routeToContact)
 
+// PLease ignore the logic of my routeTo functions i will improve them later
+
 function routeToHome() {
     app.innerHTML = "";
     app.appendChild(header())
